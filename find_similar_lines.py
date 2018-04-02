@@ -47,11 +47,6 @@ for items in lines_to_remove:
         amharic_dictionary.pop(items)
         english_dictionary.pop(items)
 
-print(len(amharic_dictionary))
-print(len(english_dictionary))
-
-
-
 fo_amharic = open('new-am.txt', 'w')
 
 for k, v in amharic_dictionary.items():
@@ -67,3 +62,5 @@ for k, v in english_dictionary.items():
 
 fo_english.close()
 
+print(len(amharic_dictionary))
+print(len(english_dictionary))
